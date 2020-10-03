@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="text/css" href="img/head.jpg">
+  <title>Achievement Images</title>
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/about.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        .button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: paleturquoise; 
+  color: indigo; 
+  border: 2px solid #008CBA;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+        img {
+  border-radius: 8px;
+}
+
+</style>
+</head>
+<body style="background: linear-gradient(to bottom right, #000066 0%, #660066 100%);">
+  
+    
+    <header style="position: fixed">
+        <a href="index.html" class="logo"><img src="img/head.jpg" height="80px" width="90px" style="border-radius: 50%;"></a>
+      <a class="toggle">Menu</a>
+      <ul class="">
+        
+        <li><a href="about.html" >About NASA</a></li>
+        <li><a href="#">NASA towards earth</a></li>
+        <li><a href="#">Challenges</a></li>
+        <li><a href="gallery.html" class="current">Gallery</a></li>
+          
+        <li><a href="ebookf/ebook/ebook.html" target="_blank">E-Book</a></li>
+        <li><a href="#">Blog</a></li>
+        
+      </ul>
+    </header>
+  <br>
+    <br><br>
+    <br><br>
+    <br>
+    <button style="text-align: center; margin-left: 80%" onclick="hide()" class="button button1" >    show slideshow</button>
+<div id="hide1" style="margin-left: 150px">
+<img class="nasa" src="img/g1.jpg" width="1180px" height="800px">
+<img class="nasa" src="img/g2.jpg" width="1180px" height="800px">
+<img class="nasa" src="img/g3.jpg" width="1180px" height="800px">
+<img class="nasa" src="img/g4.jpg" width="1180px" height="800px">
+<img class="nasa" src="img/g5.jpg" width="1180px" height="800px">
+<img class="nasa" src="img/g6.jpg" width="1180px" height="800px">
+    </div><br><br><br>
+    <h2 style="text-align: center; color: azure; font-size: 70px" >Grid View</h2>
+<div class="row" >
+    <div class="column">
+  <img src="img/g1.jpg" style="width:100%" >
+  <img src="img/g2.jpg" style="width:100%">
+  <img src="img/g3.jpg" style="width:100%">
+  <img src="img/g4.jpg" style="width:100%">
+  <img src="img/g5.jpg" style="width:100%">
+  <img src="img/g6.jpg" style="width:100%">
+  
+  </div>
+<div class="column">
+  <img src="img/g7.jpg" style="width:100%">
+  <img src="img/g8.jpg" style="width:100%">
+  <img src="img/g9.jpg" style="width:100%">
+  <img src="img/g10.jpg" style="width:100%">
+  <img src="img/g11.jpg" style="width:100%">
+  <img src="img/g12.jpg" style="width:100%">
+  
+  </div>
+
+  
+  </div>
+    </div>
+<script>
+w3.slideshow(".nasa", 4000);
+</script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+  $('.toggle').click(function(){
+    $("ul").toggleClass("active");
+  }); 
+});
+     var x = document.getElementById("hide1");
+     x.style.display="none";
+     function hide() {
+  
+  
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    
+    
+  } else {
+    x.style.display = "none";
+   
+    
+  }
+     }
+          </script>
+</body>
+</html>
