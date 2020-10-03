@@ -1,0 +1,59 @@
+ body{
+        background: linear-gradient(to top right, #33ccff 0%, #003366 100%);
+        overflow: scroll;
+    }
+    #flipbook .page{
+        background: black;
+    }
+    #flipbook .shadow,
+    #flipbook.shadow{
+      -webkit-box-shadow: 0 4px 10px #666;
+      -moz-box-shadow: 0 4px 10px #666;
+      -ms-box-shadow: 0 4px 10px #666;
+      -o-box-shadow: 0 4px 10px #666;
+      box-shadow: 0 4px 10px #666;
+}
+#flipbook{
+	transition:margin-left 1s;
+	-webkit-transition:margin-left 1s;
+	-moz-transition:margin-left 1s;
+	-o-transition:margin-left 1s;
+	-ms-transition:margin-left 1s;
+	transition:margin-left 1s;
+}
+#flipbook .page-wrapper{
+   -webkit-perspective:2000px;
+   -moz-perspective: 2000px;
+   -ms-perspective: 2000px;
+   perspective: 2000px;
+}
+/* Chrome, Safari and Opera syntax */
+:-webkit-full-screen {
+   top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+/* Firefox syntax */
+:-moz-full-screen {
+   top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+/* IE/Edge syntax */
+:-ms-fullscreen {
+   top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+/* Standard syntax */
+:fullscreen {
+  top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
