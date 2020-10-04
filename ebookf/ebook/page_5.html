@@ -1,14 +1,123 @@
-<div>
+<style>
+       .button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: paleturquoise; 
+  color: indigo; 
+  border: 2px solid #008CBA;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+    .button2 {
+  background-color: firebrick; 
+  color: white; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: red;
+  color: black;
+}
+        img {
+  border-radius: 8px;
+}
+</style><div>
 <h1 id="b5" style="color: white">Nature Sounds</h1>
         <p>That would be the end of our tour hope you all enjoyed it! Heres a list of ringtones and audio that helps you connect with nature
             ENJOY!</p>
     
-    <ul><a href="Sounds/Moderate-Rain-Falling.mp3">Rain drops</a></ul>
-    <ul><a href="Sounds/Storm.mp3">Lightning</a></ul>
-    <ul><a href="Sounds/volcano-eruption-sound.mp3">Volcanic eruption</a></ul>
-    <ul><a href="Sounds/salamisound.mp3">Birds chirping</a></ul>
     
     
+    <audio id="myAudio1">
+  <source src="Sounds/Moderate-Rain-Falling.mp3" type="audio/wav">
+  <source src="Sounds/Moderate-Rain-Falling.mp3" type="audio/mpeg">
+</audio>
+  <audio id="myAudio2">	
+  	 <source src="Sounds/Storm.mp3" type="audio/wav">
+  <source src="Sounds/Storm.mp3" type="audio/mpeg">
+</audio>
+  	<audio id="myAudio3">
+  	  <source src="Sounds/volcano-eruption-sound.mp3" type="audio/wav">
+  <source src="Sounds/volcano-eruption-sound.mp3" type="audio/mpeg">
+  	 </audio>
+  <audio id="myAudio4">	
+  	 <source src="Sounds/salamisound.mp3" type="audio/wav">
+  <source src="Sounds/salamisound.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<button class="button button1" onclick="playAudio1()" type="button">Rain Drops</button>
+<br> 
+<button class="button button1" onclick="playAudio2()" type="button">Lightining</button>
+<br>
+<button class="button button1"onclick="playAudio3()" type="button">Volcanic Erruption</button>
+<br> 
+<button class="button button1" onclick="playAudio4()" type="button">Bird Chirping</button>
+    <br>
+<button class="button button2" onclick="pauseAudio()" type="button">Pause Audio</button> 
+<script>
+var x = document.getElementById("myAudio1"); 
+
+function playAudio1() { 
+  x.play(); 
+    y.pause();
+    z.pause();
+    p.pause();
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+    y.pause();
+    z.pause();
+    p.pause();
+} 
+
+var y = document.getElementById("myAudio2"); 
+
+function playAudio2() { 
+  y.play(); 
+    x.pause();
+    z.pause();
+    p.pause();
+} 
+
+
+
+var z = document.getElementById("myAudio3"); 
+
+function playAudio3() { 
+  z.play(); 
+    y.pause();
+    x.pause();
+    p.pause();
+} 
+
+
+    var p = document.getElementById("myAudio4"); 
+
+function playAudio4() { 
+  p.play(); 
+    y.pause();
+    z.pause();
+    x.pause();
+} 
+
+
+</script>
 
 </div>
 <p style="text-align-last: center">5</p>
